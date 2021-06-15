@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox alignment="CENTER" layoutX="151.0" prefHeight="402.0" prefWidth="298.0" spacing="14.0">
+         <children>
+            <Label text="Register">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="errorLabel" textFill="RED">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="usernameTextField" promptText="Username" />
+            <PasswordField fx:id="passwordTextField" promptText="Password" />
+            <PasswordField fx:id="confirmPswTextField" promptText="Confirm password" />
+            <CheckBox fx:id="adminToggle" mnemonicParsing="false" prefHeight="18.0" prefWidth="304.0" text="Admin" onMouseClicked="#changeAdminSelection" />
+            <TextField fx:id="adminKey" promptText="Admin key" visible="false" />
+            <TextField fx:id="adminUsername" promptText="Admin username" visible="false" />
+            <Label fx:id="loginButton" alignment="TOP_RIGHT" contentDisplay="RIGHT" onMouseClicked="#goToLogin" prefHeight="18.0" prefWidth="297.0" text="Already have an account? Login" />
+            <Button fx:id="registerButton" mnemonicParsing="false" onMouseClicked="#register" text="Register" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
