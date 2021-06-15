@@ -10,6 +10,7 @@ import javafx.stage.Stage;
 import java.io.IOException;
 import javafx.fxml.FXML;
 
+
 public class LoginController {
 
     private Market market;
